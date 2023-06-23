@@ -1,0 +1,948 @@
+*{
+    padding: 0;margin: 0;
+}
+header{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+html {
+    /* cursor: pointer; */
+    scroll-behavior:smooth;
+    /* cursor: none; */
+  }
+.Education-info-text::selection{
+
+    background-color: black;
+    color: #0000ac;
+}
+.cursor{
+    width: 20px;
+    height: 20px;
+    border: 3px solid red;
+    border-radius: 50%;
+    position: absolute;
+}
+.prevent-select {
+    user-select: none; /* Standard syntax */
+  }
+
+.select-purple::selection {
+    /* color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0); */
+    color: white;
+    background: purple;
+  }
+.select-black::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+  }
+.select-orange::selection {
+    color: rgb(0, 4, 45);
+    background: orange;
+  }
+.select-white::selection {
+    color: rgb(0, 4, 45);
+    background: white;
+  }
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    z-index: 0;
+    /* background-color: red; */
+}
+.logo-home{
+    text-decoration: none;
+    border-radius: 50%;
+    color: #000000;
+}
+.logo-home img{
+    /* text-decoration: none; */
+    border-radius: 50%;
+    
+}
+nav{
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: 70px;
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 2px solid gray; */
+    
+}
+nav {
+    font-size: 20px;
+    background: white;
+    position: fixed;
+    overflow: hidden;
+    /* glass morphism */
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 4px 16px 0 rgba( 10, 10, 10, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 100px );
+    /* border-radius: 10px; */
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+nav .menu a{
+    margin-right: 33px;
+    text-decoration: none;
+    color: black;
+    
+}
+.left{
+    float: left;
+    text-align: left;
+    flex-basis: 50%;
+    /* width: 50%; */
+}
+.right{
+    /* width: 50%; */
+    flex-basis: 20%;
+    z-index: 1;
+}
+
+.menu{
+   padding-right: 100px;
+}
+.menu :hover{
+    text-decoration: underline;
+    color: blue;
+}
+.logo{
+    padding-left: 130px;
+}
+.text span{
+    color: orange;
+}
+.logo img{
+    padding-right: 10px;
+    width: 38px;
+    position: absolute;
+    top: 21px;
+    margin-left: -40px;
+}
+.text{
+    width: 80%;
+    margin-left: 17px;
+    margin-top: 150px;
+}
+.text p{
+    font-size: 78px;
+    font-weight: bolder;
+}
+.hi{
+    font-weight:33px ;
+    margin-bottom: 10px;
+}
+.text1{
+    width: 60%;
+    font-size: 38px;
+    font-weight: bolder;
+    margin-left: 17px;
+    margin-top: 20px;
+}
+.text1 span{
+    color: purple;
+}
+.text1 button{
+    margin-top: 20px;
+    font-size: 28px;
+    color: white;
+    padding: 5px;
+    padding-top: 7px;
+    padding-right: 29px;
+    padding-left: 28px;
+    border-radius: 40px;
+    font-weight: 10px;
+    background: linear-gradient(#0000ac , #000000);
+}
+
+.text1 button  :hover{
+    cursor: pointer;
+}
+
+.social{
+    margin-left: 17px;
+    padding-top: 20px;
+}
+.circle-bottom-left{
+    background: orange;
+    width: 60px;
+    height: 60px;
+    bottom: 23px;
+    left: 25px;
+    position: fixed;
+    border-radius: 50%;
+}
+.circle-bottom-left ion-icon{
+    font-size: 33px;
+    margin: 14px;
+    
+}
+#linkedin{
+    font-size: 28px;
+    margin-right: 8.5px;
+    border-radius: 100%;
+    background: black;
+    color: rgb(0, 224, 255);
+    padding: 5px;
+}
+#linkedin:hover{
+    cursor: pointer;
+    font-size: 28px;
+    margin-right: 8.5px;
+    border-radius: 100%;
+    background: black;
+    color: rgb(154, 211, 201);
+    padding: 5px;
+}
+.image{
+    /* z-index: 1; */
+    margin-right: 50px ;
+    overflow: hidden;
+    margin-top: 150px; 
+    border-radius: 100%;
+    background-color: yellow;
+    width: 400px;
+    height: 400px;
+}
+.image img{
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    margin-bottom:  -5px;
+    /* animation: motion 4s ease-in-out infinite ; */
+}
+/* @keyframes motion {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem)
+    }
+    0%{
+        transform: translateY(0);
+    }
+    
+} */
+
+::-webkit-scrollbar{
+    width: 0.9em;
+}
+::-webkit-scrollbar-track{
+    /* background: hsl(120, 75%, 25% / 1); */
+    border-radius: 100vw;
+    background: rgb(4, 79, 164);
+}
+::-webkit-scrollbar-thumb{
+    border: 2px solid rgb(49, 0, 49);
+    background: purple;
+    border-radius: 100vw;
+    /* background: hsl(120, 100%, 20% / 1); */
+}
+::-webkit-scrollbar-button{
+    height: 0.5rm;
+    background-color: rgb(129, 101, 129);
+}
+
+
+/* about */
+#About{
+    height: 100vh;
+    /* background-color: rgb(196, 255, 86); */
+    flex-wrap: wrap;
+    /* display: flex; */
+}
+
+.About-info{
+ 
+    display: flex;
+    height: 18%;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.About-info ion-icon{
+    width: 70px;
+    font-size: 48px;
+}
+.About-info span{
+    margin-left: 12px;
+    color: purple;
+}
+.About-left{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    width: 49%;
+    /* width: 49%; */
+    margin: 5px;
+    padding: 20px;
+}
+.About-right{
+/* background-color: brown; */
+    position: relative;
+    top: -310px;
+    padding: 20px;
+    float: right;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+}
+.About-text .firstp{
+    font-size: 30px;
+    position: relative;
+    top: -125px;
+    font-weight: 600;
+}
+.About-text .secondp{
+    position: relative;
+    top: -100px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.About-text .thirdp{
+    position: relative;
+    top: -65px;
+    font-size: 30px;
+    line-height: 29px;
+    font-size: 15px;
+}
+.About-text .fourp{
+    position: relative;
+    top: -37px;
+    font-size: 15px;
+}
+.About-text .fivep{
+    position: relative;
+    top: -16px;
+    font-size: 15px;
+}
+.fourp span{
+    color: blue;
+}
+.fivep span{
+    color: blue;
+}
+.About-left img{
+    border-radius: 25px;
+    height: 400px;
+    filter: grayscale(100%);
+}
+.About-left img:hover{
+    cursor: pointer;
+    border-radius: 25px;
+    height: 400px;
+    filter: grayscale(0%);
+}
+.About-text button{
+    border-radius: 5px;
+    color: white;
+    margin-top: 23px;
+    padding: 8px;
+    background-color: #3030a5;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 27px;
+    box-shadow: 7px 4px 4px 0px rgb(0, 0, 0 , 0.5) ;
+}
+.About-text button:hover{
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 9px 4px 11px black;
+}
+.About-text button ion-icon{
+    position: relative;
+    top: 6px;
+}
+
+#Education{
+    height: 100vh;
+    background: whitesmoke;
+}
+.Education-info-heading{
+    /* background: brown; */
+    width: 100%;
+    height: 20%;
+    
+}
+.Education-info-heading p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Education-info-heading span {
+    color: purple;
+    margin-left: 6px;
+}
+.Education-info-heading ion-icon {
+    margin-right: 6px;
+    margin-top: 10px;
+}
+.Education-info-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Education-container{
+    height: 80%;
+}
+
+.Education-card1 {
+    /* text-align: center; */
+    display: flex;
+    margin-left: 200px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background: red; */
+    /* border: 2px solid black; */ 
+    box-shadow: 7px 5px 10px rgb(0, 0, 0, 0.5);
+    width: 70%;
+    border-radius: 10px;
+    height: 20%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Education-card1:hover{
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+.Education-card2{
+    box-shadow: 7px 5px 10px rgb(0, 0, 0 , 0.5);
+    border-radius: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    margin-top: 40px;
+    margin-left: 200px;
+    flex-wrap: wrap;
+    /* background: rgb(70, 39, 245); */
+    width: 70%;
+    height: 20%;
+}
+.Education-card2:hover{
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+.Education-left1{
+    flex-basis:30% ;
+}
+.Education-left1 img{
+    width: 76%;
+    height: 136px;    
+    border-radius: 10px ;
+}
+.Education-right1{
+    flex-basis: 70%;
+}
+.Education-right2{
+    flex-basis: 70%;
+}
+.Education-right1 h2 ,h3 , h4{
+    margin-top: 10px;
+}
+.Education-right1 h3{
+    color: green;
+}
+.Education-right1 h2{
+    color: blue;
+}
+.Education-left2{
+    flex-basis:30% ;
+}
+.Education-left2 img{
+    width: 77%;
+    border-radius: 10px;
+    height: 136px;    
+}
+.Education-left3 img{
+    width: 77%;
+    border-radius: 10px;
+    height: 136px;    
+}
+.Education-right2 h3{
+    color: green;
+}
+.Education-right2 h2{
+    color: blue;
+}
+.Education-right2 h2 ,h3 , h4{
+    margin-top: 10px;
+}
+
+            /* PROJECT */
+.Project{
+    height: 100vh;
+    background: rgb(0, 4, 45);
+}
+.Project-info{
+    /* background: brown; */
+    background: rgb(0, 4, 45);
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    height: 17%;
+    display: flex;
+    
+}
+.Project-info p {
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-weight: 900;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Project-info span {
+    color: orange;
+    margin-left: 6px;
+}
+.Project-info ion-icon {
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.Project-card{
+    width: 420px;
+    height: 303px;
+    margin-top: 13px;
+    /* margin-bottom: 44px; */
+    margin-left: 0px;
+    margin-right: 18px;
+    display: inline-flex;
+    background: aqua;
+    justify-content: center;
+    flex-direction: column;
+}
+.Project-container{
+    /* overflow: hidden; */
+    /* display: flex; */
+    /* width: 50%; */
+    height: 83%;
+    padding: 0px 99px;
+}
+.Project-card img {
+    width: 100%;
+    height: 100%;
+}
+.Project-card:hover{
+    cursor: pointer;
+
+}
+
+
+/* -------------------------------------------- */
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+.card {
+    background: rgb(0, 4, 45);
+  font-family: 'Lily Script One';
+}
+
+.card {
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  display: inline-block;
+  /* width: 409px;
+  height: 266px; */
+  width: 30%;
+  height: 40%;
+  margin-left: 28px;
+  margin-top: 15px;
+  /* float: left; */
+  
+  box-shadow:  10px 10px 15px rgba(255, 0, 0, );
+  border-radius: 10px;
+  perspective: 500px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow:  10px 10px 15px rgba(255, 0, 0, );
+  border-radius: 10px;
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+    
+  box-shadow:  4px 7px 10px rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+    
+  box-shadow:  7px 3px 11px rgb(255, 255, 255 , 0.3);
+  border-radius: 10px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: orange;
+  /* line-height: 3px; */
+  color: #03446A;
+  text-align: center;
+  font-size: 10px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: #03446A;
+  
+  box-shadow:  10px 10px 15px rgba(255, 0, 0, );
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  transform: rotateY( 180deg );
+}
+.back p {
+    word-wrap: break-word;
+    overflow-wrap:break-word ;
+    height: 79%;
+    width: 100%;
+    /* font-size: m; */
+    
+}
+.back h1{
+
+    color: orange;
+  background: #03446A;
+  /* text-size-adjust: 100%; */
+  /* height: 40%; */
+  font-weight: 700;
+  transform: rotateY( 180deg );
+}
+.front img{
+    
+  box-shadow:  10px 10px 15px rgba(255, 0, 0, );
+  border-radius: 10px;
+    width: 100%;
+    height:100%;
+}
+.Project-button{
+    background: transparent;
+    /* position: absolute; */
+    color: white;
+    border: 1px solid white;
+    margin-left: 45%;
+    box-shadow: 5px 5px 10px rgb(43, 47, 98);
+    margin-top: 21px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 7px;
+    padding-left: 19px;
+    padding-right: 15px;
+}
+.Project-button:hover{
+    cursor: pointer;
+    color: rgb(0, 4, 45);
+    /* color: rgb(255, 255, 255); */
+    transition: ease-out 0.5s;
+    background: white;
+}
+/* .Project-button ion-icon {
+    margin-bottom: -4px;
+    margin-left: 9px;
+} */
+/* .Project-button ion-icon :hover{
+    margin-bottom: -4px;
+    margin-left: 11px;
+} */
+#Contact{
+    height: 90vh;
+    background: rgb(214, 216, 230);}
+
+.Contact-info{
+    /* background-color: brown; */
+    background: rgb(214, 216, 230);
+    display: flex;
+    height: 18%;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Contact-info ion-icon{
+    width: 70px;
+    font-size: 48px;
+}
+.Contact-info span{
+    margin-left: 1px;
+    color: purple;
+}
+.Contact-container{
+    height: 53%;
+    padding: 0px 230px;
+    /* padding-top: 20px; */
+    background: rgb(214, 216, 230);
+    
+    /* padding-bottom: 128px; */
+    /* background: red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.Contact-left{
+    flex-basis: 50%;
+    box-shadow: 5px 5px 10px rgb(43, 47, 98);
+
+    background: white;
+    width: 50%;
+    /* border-radius: 10px 0px; */
+    border-radius: 10px 0px 0px 10px;
+
+}
+.Contact-left img{
+    margin-left: 82px;
+    width: 68%;
+    height: 100%;
+}
+.Contact-right{
+    box-shadow: 5px 5px 10px rgb(43, 47, 98);
+    border-radius: 0px 10px 10px 0px;
+    background: white;
+    width: 50%;
+    flex-basis: 50%;
+}
+
+.text-input{
+    /* margin-left: 40px; */
+    /* margin-right: 40px; */
+    margin-inline: 30px;
+    margin-top: 22px;
+    background: whitesmoke;
+    width: 84%;
+    height: 40px;
+    font-size: 15px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.textarea-input{
+    /* resize: none; */
+    height: 105px;
+}
+.Contact-button{
+    background: blue;
+    margin-left: 363px;
+    color: white;
+}
+.Contact-button ion-icon{
+    margin-left: 10px;
+    margin-bottom: -2px;
+}
+.Contact-button ion-icon:hover{
+    margin-left: 12px;
+}
+.Contact-button:hover{
+    background: rgb(41, 41, 255);
+    color: white;
+}
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 100%;
+  }
+  
+  body {
+    font-family: acumin-pro, system-ui, sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    align-items: start;
+    min-height: 100vh;
+  }
+  
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    
+    background: rgb(0, 4, 45);
+
+
+
+
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    color: white;
+    /* text-transform: lowercase; */
+    font-size: 2rem;
+  }
+  
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .nav__title {
+    font-weight: 400;
+    font-size: 15px;
+    color: yellow;
+  }
+  
+  .footer address {
+    font-style: normal;
+    color: #26ff00;
+  }
+  
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: #ff0000;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__nav {
+    display: flex;
+      flex-flow: row wrap;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color: #ffffff;
+  }
+  
+  .nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+  }
+  
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: orange;
+  }
+    
+  .legal__links {
+    /* display: flex; */
+    font-size: 30px;
+    /* align-items: center; */
+  }
+  
+  .heart {
+    color: #ff0000;
+  }
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+    
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
+
+
+  @media screen and (max-width: 1114px) {
+   .card{
+    height: 40%;
+    width: 40%;
+   }
+   .card5{
+    display: none;
+   }
+   .card6{
+    display: none;
+   }
+  }
+  /* @media screen and (max-width: 1100px) {
+   .content .card{
+    height: 70%;
+    width: 70%;
+   }
+  } */
+
+
