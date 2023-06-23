@@ -353,7 +353,8 @@ nav .menu a{
     height: 400px;
     filter: grayscale(0%);
 }
-.About-text button{
+.About-text a{
+    text-decoration: none;
     border-radius: 5px;
     color: white;
     margin-top: 23px;
@@ -363,12 +364,12 @@ nav .menu a{
     font-size: 27px;
     box-shadow: 7px 4px 4px 0px rgb(0, 0, 0 , 0.5) ;
 }
-.About-text button:hover{
+.About-text a:hover{
     cursor: pointer;
     transition: .5s;
     box-shadow: 9px 4px 11px black;
 }
-.About-text button ion-icon{
+.About-text a ion-icon{
     position: relative;
     top: 6px;
 }
@@ -938,11 +939,3 @@ nav .menu a{
     display: none;
    }
   }
-  /* @media screen and (max-width: 1100px) {
-   .content .card{
-    height: 70%;
-    width: 70%;
-   }
-  } */
-
-
