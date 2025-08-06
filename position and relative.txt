@@ -1,0 +1,10 @@
+ position: absolute;
+tab lagate h jab container me koi bhi nahi ho
+
+
+
+position: relative;
+
+tab lagate h jab agar use img ko change kare tab vo bhi vo change ho
+
+use k relative
